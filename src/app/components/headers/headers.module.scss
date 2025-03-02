@@ -1,6 +1,43 @@
 
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    // padding: 2rem 0;
+    background-color: var(--verde);
+    color: white;
+    position: fixed;
+  }
+
+
+.buttonMenu{
+    background: none;
+    border-style: none;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.headerRight {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+} 
+
+.divModulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+
+}
+
 .titleBold16{
     font-size: 16px;
     font-weight: 700;
-    color: var(--verde-claro);
+    color: var(--verde-claro-light-2);
 }

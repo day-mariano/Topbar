@@ -1,23 +1,36 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../../page.module.scss";
 import headersStyles from "../headers.module.scss"
+import { useState } from "react";
 
 export default function Modulo1() {
+  const [nameModulo, setNameModulo] = useState("Dossiê Juridico")
+
   return (
     <>
-      <header className={styles.header}>
-        <div>
-          <Image
-              src="/Menu.png"
-              alt="logo"
-              width={26}
-              height={24}
-              />
+      <header className={headersStyles.header}>
+        <div className={headersStyles.headerRight}>
+          <button className={headersStyles.buttonMenu}>
+            <Image
+                src="/Menu.png"
+                alt="logo"
+                width={26}
+                height={24}
+                />
+          </button>
+          <div className={headersStyles.divModulo}>
+            <Image
+                src="/Vector (1).png"
+                alt="logo"
+                width={26}
+                height={24}
+                />
             <p className={headersStyles.titleBold16}>
-              Header
+              {nameModulo}
             </p>
-
+          </div>
         </div>
         <Link
           href="/" 
