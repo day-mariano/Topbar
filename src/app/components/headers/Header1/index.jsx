@@ -7,6 +7,7 @@ import { useState } from "react";
 
 export default function Modulo1() {
   const [nameModulo, setNameModulo] = useState("Dossiê Juridico")
+  const [nameUsuario, setNameUsuario] = useState("Carla Souza")
 
   return (
     <>
@@ -47,18 +48,26 @@ export default function Modulo1() {
           <button className={headersStyles.buttonBell}>
             <Image
               src="/icon.svg"
-              alt="logo"
+              alt="icon"
               width={24}
               height={24}
               />
           </button>
-          <Link
-            href="/"
-            target="_blank"
-            rel="Usuario"
-          >
-            Usuário
-          </Link>
+          <button className={headersStyles.buttonUsuario}>
+            <Image
+              src="/photo.svg"
+              alt="logo"
+              width={48}
+              height={48}
+              />
+            <p>{nameUsuario}</p>
+            <Image
+            src="/expand_more_FILL0_wght400_GRAD0_opsz48 1.svg"
+            alt="expand"
+            width={16}
+            height={16}
+            />
+          </button>
         </nav>
       </header>
     </>

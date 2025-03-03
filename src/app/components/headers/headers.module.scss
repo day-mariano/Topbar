@@ -55,3 +55,18 @@
     cursor: pointer;
     padding: 6px;
 }
+
+.buttonUsuario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: none;
+    border-style: none;
+    cursor: pointer;
+    padding: 6px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    gap: 8px;
+
+}
