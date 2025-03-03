@@ -43,11 +43,19 @@ export default function Modulo1() {
             height={40}
             />
         </Link>
-        <nav className={styles.nav}>
+        <nav className={headersStyles.nav}>
+          <button className={headersStyles.buttonBell}>
+            <Image
+              src="/icon.svg"
+              alt="logo"
+              width={24}
+              height={24}
+              />
+          </button>
           <Link
             href="/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="Usuario"
           >
             Usuário
           </Link>
