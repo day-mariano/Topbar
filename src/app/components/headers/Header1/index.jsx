@@ -14,7 +14,7 @@ export default function Modulo1() {
         <div className={headersStyles.headerRight}>
           <button className={headersStyles.buttonMenu}>
             <Image
-                src="/Menu.png"
+                src="/Menu.svg"
                 alt="logo"
                 width={26}
                 height={24}
@@ -22,7 +22,7 @@ export default function Modulo1() {
           </button>
           <div className={headersStyles.divModulo}>
             <Image
-                src="/Vector (1).png"
+                src="/Vector.svg"
                 alt="logo"
                 width={26}
                 height={24}
@@ -37,7 +37,7 @@ export default function Modulo1() {
           target="_self"
         >
             <Image
-            src="/Logo.png"
+            src="/Logo.svg"
             alt="logo"
             width={204}
             height={40}
