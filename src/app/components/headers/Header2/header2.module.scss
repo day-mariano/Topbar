@@ -1,0 +1,13 @@
+@media (max-width: 430px) {
+    .nav, .divModulo {
+        display: none;
+    }
+}
+@media (min-width: 430px) {
+    .buttonHug, .logoLink {
+        display: none;
+    }
+    .logoLink {
+        display: none;
+    }
+}
