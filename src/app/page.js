@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <div className={`${styles.page} ${globalStyles.body}`}>
       {/* <Header1/> */}
-      <Header2/>
-      {/* <Header3/> */}
+      {/* <Header2/> */}
+      <Header3/>
       {/* <Header4/> */}
     </div>
   );
