@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../../../page.module.scss";
 import headersStyles from "../headers.module.scss"
 import { useState } from "react";
 
@@ -69,6 +68,14 @@ export default function Modulo1() {
             />
           </button>
         </nav>
+        <button className={headersStyles.buttonHug}>
+        <Image
+            src="/Frame 4666.svg"
+            alt="buttonHug"
+            width={16}
+            height={16}
+            />
+        </button>
       </header>
     </>
   );
