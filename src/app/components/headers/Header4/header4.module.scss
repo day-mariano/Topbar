@@ -1,10 +1,3 @@
-@media (max-width: 430px) {
-    .nav, .divModulo {
-        display: none;
-    }
-}
-@media (min-width: 430px) {
-    .buttonHug, .divModulo {
-        display: none;
-    }
+.header{
+    justify-content: center;
 }

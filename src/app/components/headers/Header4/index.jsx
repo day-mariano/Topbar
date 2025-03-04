@@ -11,31 +11,10 @@ export default function Modulo1() {
 
   return (
     <>
-      <header className={headersStyles.header}>
-        <div className={headersStyles.headerRight}>
-          <button className={headersStyles.buttonMenu}>
-            <Image
-                src="/Menu.svg"
-                alt="menu"
-                width={26}
-                height={24}
-                />
-          </button>
-          <div className={header4Styles.divModulo}>
-            <Image
-                src="/Vector.svg"
-                alt="Vector"
-                width={26}
-                height={24}
-                />
-            <p className={headersStyles.titleBold16}>
-              {nameModulo}
-            </p>
-          </div>
-        </div>
+      <header className={`${headersStyles.header} ${header4Styles.header}`}>
         <Link
           href="/" 
-          target="_self"
+          target="home"
         >
             <Image
             src="/Logo.svg"
@@ -44,39 +23,6 @@ export default function Modulo1() {
             height={40}
             />
         </Link>
-        <nav className={`${headersStyles.nav} ${header4Styles.nav}`}>
-          <button className={headersStyles.buttonBell}>
-            <Image
-              src="/icon.svg"
-              alt="icon"
-              width={24}
-              height={24}
-              />
-          </button>
-          <button className={headersStyles.buttonUsuario}>
-            <Image
-              src="/photo.svg"
-              alt="photo"
-              width={48}
-              height={48}
-              />
-            <p>{nameUsuario}</p>
-            <Image
-            src="/expand_more_FILL0_wght400_GRAD0_opsz48 1.svg"
-            alt="expand"
-            width={16}
-            height={16}
-            />
-          </button>
-        </nav>
-        <button className={headersStyles.buttonHug}>
-        <Image
-            src="/Frame 4666.svg"
-            alt="buttonHug"
-            width={16}
-            height={16}
-            />
-        </button>
       </header>
     </>
   );
