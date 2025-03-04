@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import headersStyles from "../headers.module.scss"
+import header4Styles from "./header4.module.scss"
 import { useState } from "react";
 
 export default function Modulo1() {
@@ -15,15 +16,15 @@ export default function Modulo1() {
           <button className={headersStyles.buttonMenu}>
             <Image
                 src="/Menu.svg"
-                alt="logo"
+                alt="menu"
                 width={26}
                 height={24}
                 />
           </button>
-          <div className={headersStyles.divModulo}>
+          <div className={header4Styles.divModulo}>
             <Image
                 src="/Vector.svg"
-                alt="logo"
+                alt="Vector"
                 width={26}
                 height={24}
                 />
@@ -43,7 +44,7 @@ export default function Modulo1() {
             height={40}
             />
         </Link>
-        <nav className={headersStyles.nav}>
+        <nav className={`${headersStyles.nav} ${header4Styles.nav}`}>
           <button className={headersStyles.buttonBell}>
             <Image
               src="/icon.svg"
@@ -55,7 +56,7 @@ export default function Modulo1() {
           <button className={headersStyles.buttonUsuario}>
             <Image
               src="/photo.svg"
-              alt="logo"
+              alt="photo"
               width={48}
               height={48}
               />
