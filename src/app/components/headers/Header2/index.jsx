@@ -5,12 +5,13 @@ import headersStyles from "../headers.module.scss"
 import header2Styles from "./header2.module.scss"
 import { useState } from "react";
 import DropdownMenu from "../../DropdownMenu"
+import DropdownUser from "../../DropdownUser"
 
 export default function Modulo1() {
   const [nameModulo, setNameModulo] = useState("Dossiê Juridico")
   const [nameUsuario, setNameUsuario] = useState("Carla Souza")
   const [isOpenMenu, setIsOpenMenu] = useState(false)
-
+  const [isOpenUser, setIsOpenUser] = useState(false)
 
   return (
     <>
@@ -62,7 +63,7 @@ export default function Modulo1() {
               height={24}
               />
           </button>
-          <button className={headersStyles.buttonUsuario}>
+          <button className={headersStyles.buttonUsuario} onClick={() => setIsOpenUser(!isOpenUser)}>
             <Image
               src="/photo.svg"
               alt="photo"
@@ -76,6 +77,11 @@ export default function Modulo1() {
             width={16}
             height={16}
             />
+            {isOpenUser && (
+              <div>
+                <DropdownUser/>
+              </div>
+            )}
           </button>
         </nav>
         <button className={headersStyles.buttonHug}>
