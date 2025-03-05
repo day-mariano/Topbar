@@ -4,23 +4,31 @@ import Link from "next/link";
 import headersStyles from "../headers.module.scss"
 import header2Styles from "./header2.module.scss"
 import { useState } from "react";
+import DropdownMenu from "../../DropdownMenu"
 
 export default function Modulo1() {
   const [nameModulo, setNameModulo] = useState("Dossiê Juridico")
   const [nameUsuario, setNameUsuario] = useState("Carla Souza")
+  const [isOpenMenu, setIsOpenMenu] = useState(false)
+
 
   return (
     <>
       <header className={headersStyles.header}>
         <div className={headersStyles.headerRight}>
-          <button className={headersStyles.buttonMenu}>
+          <button className={headersStyles.buttonMenu} onClick={() => setIsOpenMenu(!isOpenMenu)}>
             <Image
                 src="/Menu.svg"
                 alt="menu"
                 width={26}
                 height={24}
                 />
-          </button>
+                {isOpenMenu && (
+                  <div>
+                    <DropdownMenu/>
+                  </div>
+                )}
+</button>
           <div className={headersStyles.divModulo}>
             <Image
                 src="/Vector.svg"
