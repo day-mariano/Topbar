@@ -12,5 +12,6 @@ Repositório destinado a um projeto de componente de TopBar responsivo.
 - SCSS
 - JavaScript
 - React
+- Next.Js
 
 ![Preview](public/preview.png)
